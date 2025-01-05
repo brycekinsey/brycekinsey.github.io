@@ -115,12 +115,12 @@ params: # Site parameters
         ## Umami
         umami:
           scheme: https
-          instance: "${{UMAMI_INSTANCE}}"
-          id: "${{UMAMI_ID}}"
+          instance: analytics1.tercet.tech
+          id: 9ec55013-5708-4b88-8b3a-114ec2b08722
         ## Matomo
         matomo:
-          instance: "${{MATOMO_INSTANCE}}"
-          siteId: "${{MATOMO_ID}}" # The number generated after adding a site in your instance
+          instance: analytics2.tercet.tech
+          siteId: 1 # The number generated after adding a site in your instance
     support: # Enable Support
       enable: true
       services:
