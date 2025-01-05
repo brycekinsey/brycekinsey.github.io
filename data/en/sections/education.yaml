@@ -1,104 +1,88 @@
 # section information
 section:
-  name: Education
-  id: education
+  name: Education    # Title of section (default: "")
+  id: education      # url id/slug of section *Required*
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
-  enable: true
-  weight: 4
-  showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
+  enable: true       # Boolean to determine if this section is enabled (default: false)
+  weight: 3          # Order to display section in (default: alphabetical followed by weight)
+  showOnNavbar: true # Boolean to determine if a link should be shown for this section on the navbar
+  hideTitle: false   # Can optionally hide the title in sections (default: false)
 
 degrees:
-- name: Ph.D in Quantum Cryptography
-  icon: fa-microscope
-  timeframe: 2016-2020
+### Degrees Template
+# - name: B.Sc. in Computer Science & Engineering
+#   icon: fa-graduation-cap # Utilize Font Awesome's Icons (Free)
+#   timeframe: 2012-2016
+#   institution:
+#     name: University of Example
+#     url: "#"
+#     logo: /images/sections/education/Example-university.jpg
+#     darkLogo: /images/sections/education/university.jpg # Can optionally show a different logo for dark theme
+#   grade: #(optional)
+#     scale: GPA
+#     achieved: 3.5
+#     outOf: 4
+#   takenCourses: #(optional)
+#     showGrades: true # If true, the courses will be rendered as a table; Otherwise, it will render as a list and the grades will be hidden.
+#     collapseAfter: 3
+#     courses:
+#     - name: Data Structures and Algorithm
+#       achieved: 3.75
+#       outOf: 4
+#     - name: Network Security
+#       achieved: 3.80
+#       outOf: 4
+#     - name: Operating System
+#       achieved: 3.5
+#       outOf: 4
+#     - name: Artificial Intelligence
+#       achieved: 3.75
+#       outOf: 4
+#   publications: #(optional)
+#   - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#     url: "https://example.com/"
+#   - title: Fusce eu augue ut odio porttitor pulvinar.
+#     url: "https://example.com/"
+#   extracurricularActivities: #(optional)
+#   - In vitae facilisis est, eget porta sem.
+#   - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
+#   - Duis sed massa feugiat, ornare justo et, aliquam est.
+#   - Pellentesque ut fringilla magna.
+#   customSections: #(optional)
+#     - name: Thesis
+#       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#     - name: Example
+#       content: Fusce eu augue ut odio porttitor pulvinar.
+###
+
+- name: Microsoft
+  icon: fa-certificate
+  timeframe: 2023 - Present
   institution:
-    name: ABC University of Technology
-    url: "#"
-    logo: /images/sections/education/tech_college.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/tech_college.png
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3.6
-    outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
-    url: "#"
-- name: B.Sc. in Computer Science & Engineering
+    name: Azure Virtual Desktop Specialty
+    url: "https://learn.microsoft.com/api/credentials/share/en-us/brycekinsey98/F715455D0DAE031D?sharingId=1629C47C3D9A76F2"
+    logo: /images/sections/education/microsoft-certified-specialty-badge.svg
+- name: Microsoft
+  icon: fa-certificate
+  timeframe: 2022 - Present
+  institution:
+    name: Azure Administrator Associate
+    url: "https://learn.microsoft.com/api/credentials/share/en-us/brycekinsey98/623056EBC839772D?sharingId=1629C47C3D9A76F2"
+    logo: /images/sections/education/microsoft-certified-associate-badge.svg
+- name: Microsoft
+  icon: fa-certificate
+  timeframe: 2022 - Present
+  institution:
+    name: Azure Fundamentals
+    url: "https://learn.microsoft.com/api/credentials/share/en-us/brycekinsey98/CDFAD9DB2EFA84EE?sharingId=1629C47C3D9A76F2"
+    logo: /images/sections/education/microsoft-certified-fundamentals-badge.svg
+- name: Associate of Arts in Computer Science
   icon: fa-graduation-cap
-  timeframe: 2012-2016
+  timeframe: 2016 - 2018
   institution:
-    name: University of XYZ
-    url: "#"
-    logo: /images/sections/education/university.jpg
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/university.jpg
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3.5
-    outOf: 4
-  takenCourses: #(optional)
-    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    showGrades: true
-    collapseAfter: 3
-    courses:
-    - name: Data Structures and Algorithm
-      achieved: 3.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.80
-      outOf: 4
-    - name: Operating System
-      achieved: 3.5
-      outOf: 4
-    - name: Artificial Intelligent
-      achieved: 3.75
-      outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
-  custonSections: #(optional)
-    - name: Thesis
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - name: Supervisor
-      content: Fusce eu augue ut odio porttitor pulvinar.
-- name: Higher Secondary School Certificate
-  icon: fa-university
-  timeframe: 2010-2012
-  institution:
-    name: MST College of Science
-    url: "#"
-    logo: /images/sections/education/science_college.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/science_college.png
-  grade: #(optional)
-    scale: GPA
-    achieved: 5
-    outOf: 5
-  extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
-- name: Secondary School Certificate
-  icon: fa-school
-  timeframe: 2005-2010
-  institution:
-    name: JK School of Science
-  grade: #(optional)
-    scale: GPA
-    achieved: 4.5
-    outOf: 5
+    name: Florida Atlantic University
+    url: "https://www.fau.edu/engineering/"
+    logo: /images/sections/education/FloridaAtlanticUniversity.png
+  customSections:
+    - name: Awards
+      content: Soar-In-Four scholar granted by the FAU College of Engineering & Computer Science.

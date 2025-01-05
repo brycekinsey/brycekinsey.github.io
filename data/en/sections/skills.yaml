@@ -1,71 +1,329 @@
-# section information
 section:
-  name: Skills
-  id: skills
-  enable: true
-  weight: 2
-  showOnNavbar: true
-  filter: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
+  name: Skills         # Title of section (default: "")
+  id: skills           # url id/slug of section *Required*
+  enable: true         # Boolean to determine if this section is enabled (default: false)
+  weight: 4            # Order to display section in (default: alphabetical followed by weight)
+  showOnNavbar: true   # Boolean to determine if a link should be shown for this section on the navbar
+  filter: true         # Boolean to determine if the filter is enabled
+  hideTitle: false     # Can optionally hide the title in sections (default: false)
 
-# filter buttons
-buttons:
-- name: All
-  filter: "all"
-- name: Basic
-  filter: "basic"
-- name: Language
-  filter: "language"
-- name: Container
-  filter: "container"
-- name: Others
-  filter: "others"
+buttons: # Filter Buttons
+  - name: All # The text that will be displayed on the button.
+    filter: "all" # The category of the projects this button should select.
+  - name: Azure
+    filter: "azure"
+  - name: AWS
+    filter: "aws"
+  - name: Microsoft 365
+    filter: "m365"
 
-# Your Skills.
-# Give a summary of you each skill in the summary section.
+# Skills
 skills:
-- name: Kubernetes
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  categories: ["container"]
-  url: "https://kubernetes.io/"
+### Skills Template
+# - name: Example
+#   logo: /images/sections/skills/Example.png
+#   summary: "Skill summary using markdown syntax."
+#   categories: ["Example", "Technology"]
+#   url: "https://example.com/"
+###
 
-- name: Go Development
-  logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  categories: ["basic", "language"]
-  url: "https://golang.org/"
+# Azure Skills
+# https://azure.microsoft.com/en-us/products
+# - name: AI + Machine Learning
+#   logo: /images/sections/skills/Azure/Azure.svg
+#   # Areas for growth:
+#   summary: "Bot Service, Cognitive Services, Form Recognizer, Immersive Reader, Machine Learning, Metrics Advisor, Personalizer, Video Analyzer"
+#   categories: ["azure"]
+#   url: "https://azure.microsoft.com/en-us/products/category/ai-machine-learning/"
+- name: Analytics
+  logo: /images/sections/skills/Azure/10148-icon-service-Analysis-Services.svg
+  # Areas for growth: Data Lake Analytics, HDInsight, Stream Analytics, Synapse Analytics
+  summary: "Data Explorer, Log Analytics, Time Series Insights"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/analytics/"
+- name: Compute
+  logo: /images/sections/skills/Azure/10021-icon-service-Virtual-Machine.svg
+  # Areas for growth: Batch, Kubernetes Service (AKS), Service Fabric, Spring Cloud,
+  summary: "App Service, Cloud Services, Functions, Virtual Machines (Windows and Linux)"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/compute/"
+#- name: Containers
+#  logo: /images/sections/skills/Azure/Azure.svg
+#  # Areas for growth:
+#  summary: "App Service, Container Instances, Functions, Kubernetes Service (AKS), Red Hat OpenShift, Service Fabric, Spring Cloud"
+#  categories: ["azure"]
+#  url: "https://azure.microsoft.com/en-us/products/category/containers/"
+#- name: Databases
+#  logo: /images/sections/skills/Azure/Azure.svg
+#  # Areas for growth:
+#  summary: "Cosmos DB, Database for MariaDB, Database for MySQL, Database for PostgreSQL, SQL Database, SQL Managed Instance, SQL Server Stretch Database"
+#  categories: ["azure"]
+#  url: "https://azure.microsoft.com/en-us/products/category/databases/"
+- name: DevOps
+  logo: /images/sections/skills/Azure/10261-icon-service-Azure-DevOps.svg
+  # Areas for growth: DevTest Labs, GitHub Advanced Security, GitHub Packages, Test Plans
+  summary: "Artifacts, CLI, Azure DevOps, GitHub, GitHub Actions, Pipelines, PowerShell, Repos, SDKs, Visual Studio, Visual Studio Code"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/developer-tools/"
+- name: Hybrid + Multicloud
+  logo: /images/sections/skills/Azure/00756-icon-service-Azure-Arc.svg
+  # Areas for growth: Stack, VMware Solution
+  summary: "Arc, Lighthouse, Monitor, Policy, Security Center, Sentinel"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/hybrid-multicloud/"
+- name: Identity
+  logo: /images/sections/skills/Azure/Microsoft Entra ID color icon.svg
+  # Areas for growth: AD B2C, 
+  summary: "Access Reviews, Conditional Access, Domain Services (DS), Entra ID, Identity Protection, Managed Identities, Privileged Identity Management (PIM)"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/identity/"
+- name: Integration
+  logo: /images/sections/skills/Azure/02631-icon-service-Logic-Apps.svg
+  # Areas for growth: API Management, Data Factory, Data Share, Event Grid, Power Apps, Power Virtual Agents, Service Bus
+  summary: "Logic Apps and Power Automate"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/integration/"
+#- name: Internet of Things
+#  logo: /images/sections/skills/Azure/Azure.svg
+#  # Areas for growth:
+#  summary: "Device Update for IoT Hub, Digital Twins, IoT Central, IoT Edge, IoT Hub, Location-Based Services, Maps, Sphere, Time Series Insights"
+#  categories: ["azure"]
+#  url: "https://azure.microsoft.com/en-us/products/category/iot/"
+- name: Management and Governance
+  logo: /images/sections/skills/Azure/00001-icon-service-Monitor.svg
+  # Areas for growth: Blueprints, Managed Applications
+  summary: "Advisor, Arc, Automation, Cost Management, Monitor, Policy, Resource Manager, Service Health"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/management/"
+#- name: Media
+#  logo: /images/sections/skills/Azure/Azure.svg
+#  # Areas for growth:
+#  summary: "Content Delivery Network (CDN), Content Protection, Encoding, Live and On-Demand Streaming, Media Analytics, Media Player, Media Services, Video Indexer"
+#  categories: ["azure"]
+#  url: "https://azure.microsoft.com/en-us/products/category/media/"
+#- name: Migration
+#  logo: /images/sections/skills/Azure/Azure.svg
+#  # Areas for growth:
+#  summary: "Data Box, Data Box Edge, Data Box Gateway, Database Migration Service, Import/Export, Migrate, Migration Center, Site Recovery"
+#  categories: ["azure"]
+#  url: "https://azure.microsoft.com/en-us/products/category/migration/"
+#- name: Mixed Reality
+#  logo: /images/sections/skills/Azure/Azure.svg
+#  # Areas for growth:
+#  summary: "Dynamics 365 Guides, Dynamics 365 Remote Assist, HoloLens 2, Kinect DK, Mixed Reality Toolkit, Object Anchors, Remote Rendering, Spatial Anchors"
+#  categories: ["azure"]
+#  url: "https://azure.microsoft.com/en-us/products/category/mixed-reality/"
+#- name: Mobile
+#  logo: /images/sections/skills/Azure/Azure.svg
+#  # Areas for growth:
+#  summary: "App Service, Mobile Apps, Notification Hubs, Power Apps, Power Automate, Power Virtual Agents, Visual Studio App Center, Xamarin"
+#  categories: ["azure"]
+#  url: "https://azure.microsoft.com/en-us/products/category/mobile/"
+- name: Networking
+  logo: /images/sections/skills/Azure/10061-icon-service-Virtual-Networks.svg
+  # Areas for growth: DDoS Protection, Load Balancer, Traffic Manager
+  summary: "Application Gateway, Bastion, ExpressRoute, Firewall, Front Door, VPN Gateway, Virtual Network"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/networking/"
+- name: Security
+  logo: /images/sections/skills/Azure/10248-icon-service-Azure-Sentinel.svg
+  # Areas for growth: DDoS Protection
+  summary: "Advanced Threat Protection, Defender, Information Protection, Key Vault, Security Center, Sentinel"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/security/"
+- name: Storage
+  logo: /images/sections/skills/Azure/10086-icon-service-Storage-Accounts.svg
+  # Areas for growth: Data Lake, NetApp Files
+  summary: "Archive, Backup, Blob, Disk, File, Import/Export, Site Recovery, Storage Explorer"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/storage/"
+- name: Virtual Desktop Infrastructure
+  logo: /images/sections/skills/Azure/00327-icon-service-Azure-Virtual-Desktop.svg
+  # Areas for growth: Citrix Virtual Apps and Desktops, RemoteApp, VMware Horizon Cloud on Microsoft Azure,
+  summary: "Virtual Desktop (AVD) and Windows 365"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/virtual-desktop-infrastructure/"
+- name: Web
+  logo: /images/sections/skills/Azure/10035-icon-service-App-Services.svg
+  # Areas for growth: API Management, Front Door, SignalR Service, Spring Cloud
+  summary: "App Service, Content Delivery Network (CDN), Functions, Logic Apps, Static Web Apps"
+  categories: ["azure"]
+  url: "https://azure.microsoft.com/en-us/products/category/web/"
 
-- name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-  categories: ["others"]
+# AWS Skills
+# https://aws.amazon.com/products/
+# - name: Analytics
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Athena, Data Pipeline, EMR, Glue, Kinesis, Lake Formation, QuickSight, Redshift"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/analytics/"
+# - name: Application Integration
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "API Gateway, AppSync, EventBridge, MQ, SNS, SQS, SWF, Step Functions"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/application-integration/"
+# - name: Artificial Intelligence
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Comprehend, DeepLens, Lex, Polly, Rekognition, SageMaker, Transcribe, Translate"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/machine-learning/"
+# - name: Blockchain
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Managed Blockchain, Quantum Ledger Database (QLDB)"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/blockchain/"
+# - name: Business Applications
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Chime, Connect, Honeycode, Pinpoint, WorkMail"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/business-applications/"
+- name: Cloud Financial Management
+  logo: /images/sections/skills/AWS/Arch-Category_Cloud-Financial-Management_64.svg
+  # Areas for growth: Cost Anomaly Detection
+  summary: "Budgets, Cost Explorer, Cost and Usage Report, Reserved Instance Reporting"
+  categories: ["aws"]
+  url: "https://aws.amazon.com/aws-cost-management/?nc2=h_ql_prod_cm_cos"
+- name: Compute
+  logo: /images/sections/skills/AWS/Arch-Category_Compute_64.svg
+  # Areas for growth: Batch, Elastic Beanstalk, Fargate, Lightsail, Outposts, Wavelength
+  summary: "EC2 and Lambda"
+  categories: ["aws"]
+  url: "https://aws.amazon.com/compute/"
+# - name: Containers
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "App Mesh, Cloud Map, Copilot, ECR, ECS, EKS, Fargate, Proton"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/containers/"
+# - name: Database
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Aurora, DocumentDB, DynamoDB, ElastiCache, Neptune, RDS, Redshift, Timestream"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/databases/"
+# - name: Developer Tools
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Cloud9, CloudShell, CodeBuild, CodeCommit, CodeDeploy, CodePipeline, CodeStar, X-Ray"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/developer-tools/"
+- name: End User Computing
+  logo: /images/sections/skills/AWS/Arch-Category_End-User-Computing_64.svg
+  # Areas for growth: AppStream 2.0, Directory Service, Transit Gateway, WorkDocs, WorkLink
+  summary: "Client VPN, Single Sign-On, WorkSpaces"
+  categories: ["aws"]
+  url: "https://aws.amazon.com/products/end-user-computing/"
+# - name: Front-End Web & Mobile
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Amplify, App Mesh, App Runner, AppSync, Device Farm, Mobile Hub, Mobile SDK, Pinpoint"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/mobile/"
+# - name: Internet of Things
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "IoT Analytics, IoT Button, IoT Core, IoT Device Management, IoT Events, IoT Greengrass, IoT SiteWise, IoT Things Graph"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/iot/"
+- name: Management & Governance
+  logo: /images/sections/skills/AWS/Arch-Category_Management-Governance_64.svg
+  # Areas for growth: CloudTrail, Config, Control Tower, License Manager, Managed Services, Organizations, Service Catalog
+  summary: "CloudFormation"
+  categories: ["aws"]
+  url: "https://aws.amazon.com/products/management-and-governance/"
+# - name: Media Services
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Elemental MediaConnect, Elemental MediaConvert, Elemental MediaLive, Elemental MediaPackage, Elemental MediaStore, Elemental MediaTailor, Interactive Video Service, Kinesis Video Streams"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/media-services/"
+# - name: Migration & Transfer
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Application Migration Service, CloudEndure Migration, DataSync, Database Migration Service, Migration Hub, Server Migration Service, Snow Family, Transfer Family"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/migration/"
+- name: Networking & Content Delivery
+  logo: /images/sections/skills/AWS/Arch-Category_Networking-Content-Delivery_64.svg
+  # Areas for growth: App Mesh, Cloud Map, Direct Connect, Global Accelerator, PrivateLink, Transit Gateway
+  summary: "Route 53 and VPC"
+  categories: ["aws"]
+  url: "https://aws.amazon.com/networking/"
+# - name: Quantum Technologies
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Braket"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/braket/"
+# - name: Robotics
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "RoboMaker"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/robomaker/"
+# - name: Satellite
+#   logo: /images/sections/skills/AWS/AWS.svg
+#   # Areas for growth:
+#   summary: "Ground Station"
+#   categories: ["aws"]
+#   url: "https://aws.amazon.com/ground-station/"
+- name: Security, Identity, & Compliance
+  logo: /images/sections/skills/AWS/Arch-Category_Security-Identity-Compliance_64.svg
+  # Areas for growth: Firewall Manager, GuardDuty, Security Hub, Shield, WAF, Detective
+  summary: "Identity and Access Management (IAM) and Key Management Service (KMS)"
+  categories: ["aws"]
+  url: "https://aws.amazon.com/security/"
+- name: Storage
+  logo: /images/sections/skills/AWS/Arch-Category_Storage_64.svg
+  # Areas for growth: Backup, DataSync, EBS, EFS, Snow Family, Storage Gateway
+  summary: "FSx and S3"
+  categories: ["aws"]
+  url: "https://aws.amazon.com/products/storage/"
 
-- name: Docker
-  logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  categories: ["container"]
-  url: "https://www.docker.com/"
-
-- name: Prometheus
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  categories: ["basic"]
-  url: "https://prometheus.io/"
-
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["others"]
-
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["basic"]
-  url: "https://git-scm.com/"
-
-- name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  categories: ["basic", "language"]
+# Microsoft 365 Skills
+# https://www.microsoft.com/en-us/microsoft-365/products-apps-services
+- name: Communication and Collaboration
+  logo: /images/sections/skills/Microsoft365/teams.svg
+  summary: "Exchange, Loop, Mesh, Outlook, Teams"
+  categories: ["m365"]
+  url: "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"
+- name: Computing
+  logo: /images/sections/skills/Microsoft365/windows365.png
+  summary: "Windows and Windows 365"
+  categories: ["m365"]
+  url: "https://www.microsoft.com/en-us/windows-365"
+- name: Content Creation and Presentation
+  logo: /images/sections/skills/Microsoft365/powerpoint.svg
+  summary: "Clipchamp, Designer, PowerPoint, Stream, Whiteboard, Word"
+  categories: ["m365"]
+  url: "https://www.microsoft.com/en-us/microsoft-365/powerpoint"
+- name: Data Analysis and Visualization
+  logo: /images/sections/skills/Microsoft365/excel.svg
+  summary: "Excel, Forms, Power BI, Visio"
+  categories: ["m365"]
+  url: "https://www.microsoft.com/en-us/microsoft-365/excel"
+- name: File Synchronization and Protection
+  logo: /images/sections/skills/Microsoft365/onedrive.svg
+  summary: "Archive, Backup, OneDrive, SharePoint"
+  categories: ["m365"]
+  url: "https://www.microsoft.com/en-us/microsoft-365/onedrive/onedrive-for-business"
+- name: Device and Identity Management
+  logo: /images/sections/skills/Microsoft365/intune.png
+  summary: "Endpoint Manager, Enterprise Mobility + Security, Intune"
+  categories: ["m365"]
+  url: "https://www.microsoft.com/en-us/security/business/endpoint-management/microsoft-intune"
+- name: Productivity
+  logo: /images/sections/skills/Microsoft365/onenote.svg
+  summary: "Bookings, Copilot, Edge, Mobile Apps, OneNote, Planner, To Do, Viva"
+  categories: ["m365"]
+  url: "https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app"
+- name: Security and Compliance
+  logo: /images/sections/skills/Microsoft365/MSDefender.svg
+  summary: "Defender and Purview"
+  categories: ["m365"]
+  url: "https://www.microsoft.com/en-us/security/business/microsoft-defender"

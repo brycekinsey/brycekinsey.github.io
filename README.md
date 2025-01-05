@@ -1,8 +1,9 @@
-# hugo-toha.github.io
+# Repository for Bryce's Kinsey's Personal Website
+###### Built with HUGO and hosted on GitHub Pages
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b1b93b02-f278-440b-ae1b-304e9f4c4ab5/deploy-status)](https://app.netlify.com/sites/toha/deploys) [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fhugo-toha%2Fhugo-toha.github.io%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/hugo-toha/hugo-toha.github.io/goto?ref=main) ![Repository Size](https://img.shields.io/github/repo-size/hugo-toha/hugo-toha.github.io) ![Contributor](https://img.shields.io/github/contributors/hugo-toha/hugo-toha.github.io) ![Last Commit](https://img.shields.io/github/last-commit/hugo-toha/hugo-toha.github.io) ![License](https://img.shields.io/github/license/hugo-toha/hugo-toha.github.io) ![Open Issues](https://img.shields.io/github/issues/hugo-toha/hugo-toha.github.io?color=important) ![Open Pull Requests](https://img.shields.io/github/issues-pr/hugo-toha/hugo-toha.github.io?color=yellowgreen) ![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Fhugo-toha.github.io%2F) [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/b7cb60ab/hugo-toha.github.io)
+Welcome to the repository for **[my personal website](https://brycekinsey.com)**! This is built using **[HUGO](https://gohugo.io/)**, one of the most popular open-source frameworks for generating static websites. The theme is a fork of the **[Toha Hugo Theme](https://github.com/hugo-toha/toha)**.
 
-An example hugo static site with Toha theme.
+## License
 
-Attributions:
-- <a href='https://www.freepik.com/vectors/business'>Business vector created by studiogstock - www.freepik.com</a>
+- © 2024 **[Bryce Kinsey](https://brycekinsey.com)** under the **[MIT license](https://github.com/brycekinsey/brycekinsey.github.io/blob/main/LICENSE)**
+- Portions of this repository related to the **[Toha Hugo Theme](https://github.com/hugo-toha/toha)** are copyrighted by **[© 2020 hugo-toha](https://github.com/hugo-toha)** under an **[MIT license](https://github.com/hugo-toha/toha/blob/main/LICENSE)**.

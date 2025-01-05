@@ -1,29 +1,23 @@
 # Copyright Notice
-copyright: © 2020 Copyright.
+copyright: "© 2024 **[Bryce Kinsey](https://brycekinsey.com)**"
 
-# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
-disclaimer: "This theme is under MIT license. So, you can use it for non-commercial, commercial, or private uses.
-You can modify or distribute the theme without requiring any permission from the theme author.
-However, the theme author does not provide any warranty or takes any liability for any issue with the theme."
+# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `hugo.yaml` file.
+disclaimer: "This site is open-source under an **[MIT license](https://github.com/brycekinsey/brycekinsey.github.io/blob/main/LICENSE)**. You may fork **[this site's repository](https://github.com/brycekinsey/brycekinsey.github.io)** for your own use, provided the terms and conditions of the license are honored."
 
 # Meta description for your site.  This will help the search engines to find your site.
-description: Portfolio and personal blog of John Doe.
+description: Personal website of Bryce Kinsey.
 
-# specify the list of custom menus that you want to show in the top navbar.
-# they will be separated by a divider from the main menus.
+# Specify the list of custom menus that you want to show in the top navbar.They will be separated by a divider from the main menus.
 customMenus:
-- name: Docs
-  url: https://toha-guides.netlify.app/posts/
-  # specify whether to hide the menu item from top navbar or not.
-  hideFromNavbar: false
-  # specify whether to show the menu item in footer or not.
-  # if you set it to true, make sure you have set `footer.navigation.customMenus: true` in your config.yaml
-  showOnFooter: false
+- name: Example
+  url: https://example.com/
+  hideFromNavbar: true # Specify whether to hide the menu item from top navbar or not.
+  showOnFooter: false # Specify whether to show the menu item in footer or not. If you set it to true, make sure you have set `footer.navigation.customMenus: true` in your config.yaml
 
 # Specify OpenGraph Headers
 openGraph:
-  title: John's Blog
+  title: Bryce Kinsey's Website
   type: website
-  description: Portfolio and personal blog of John Doe.
-  image: images/author/john.png
-  url: https://hugo-toha.github.io
+  description: The website of Bryce Kinsey.
+  image: images/author/Headshot-BryceKinsey.png
+  url: https://brycekinsey.com

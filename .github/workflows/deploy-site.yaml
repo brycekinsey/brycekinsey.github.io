@@ -1,0 +1,70 @@
+name: Deploy to Github Pages
+
+# run when a commit is pushed to "source" branch
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    # checkout to the commit that has been pushed
+    - uses: actions/checkout@v4
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: 'latest'
+        extended: true
+
+    - name: Cache Hugo Modules
+      uses: actions/cache@v3
+      with:
+        path: /tmp/hugo_cache/modules
+        key: ${{ runner.os }}-hugo-modules-${{ hashFiles('**/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-hugo-modules-
+
+    - name: Update Hugo Modules
+      run: hugo mod tidy
+
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Cache Node Modules
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-modules-
+
+    - name: Install node modules
+      run: |
+        hugo mod npm pack
+        npm install        
+
+    - name: Inject Secrets
+      run: |
+        sed -i 's/\${{UMAMI_INSTANCE}}/${{ secrets.UMAMI_INSTANCE }}/' hugo.yaml
+        sed -i 's/\${{UMAMI_ID}}/${{ secrets.UMAMI_ID }}/' hugo.yaml
+        sed -i 's/\${{MATOMO_INSTANCE}}/${{ secrets.UMAMI_INSTANCE }}/' hugo.yaml
+        sed -i 's/\${{MATOMO_ID}}/${{ secrets.UMAMI_ID }}/' hugo.yaml
+
+    - name: Build
+      run: hugo --minify
+
+    - name: Verify Build
+      run: test -d public
+
+    # push the generated content into the `gh-pages` branch.
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./public
