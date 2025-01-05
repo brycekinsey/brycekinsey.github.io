@@ -28,7 +28,15 @@ projects:
 - name: My Personal Website
   logo: /images/sections/projects/hugo.svg
   role: Owner (Fork)
-  timeline: "January 2023 - Present"
+  timeline: "October 2024 - Present"
   repo: https://github.com/brycekinsey/brycekinsey.github.io
   summary: This is the repository for **[my personal website](https://brycekinsey.com)**! This is built using **[HUGO](https://gohugo.io/)**, one of the most popular open-source frameworks for generating static websites. The theme is a fork of the **[Toha Hugo Theme](https://github.com/hugo-toha/toha)**.
-  tags: ["development", "devops", "web-development", "static-site-generator"]
+  tags: ["web-development", "static-site-generator", "hugo", "github-pages", "golang", "markdown", "yaml", "nodejs", "npm"]
+
+- name: My Former Personal Website
+  logo: /images/sections/projects/jekyll.svg
+  role: Owner (Fork)
+  timeline: "January 2023 - January 2025"
+  repo: https://github.com/brycekinsey/FormerPersonalWebsite-JekyllNeumorphism
+  summary: This is the archived repository for one of my former personal websites. This was built using **[Jekyll](https://jekyllrb.com/)**, one of the most popular static site generators. The theme is a fork of the **[Neumorphism Theme](https://github.com/longpdo/neumorphism)**.
+  tags: ["web-development", "static-site-generator", "jekyll", "github-pages", "nodejs", "ruby", "scss", "html-css-javascript"]
