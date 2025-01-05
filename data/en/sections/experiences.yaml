@@ -1,73 +1,97 @@
-# section information
 section:
-  name: Experiences
-  id: experiences
-  enable: true
-  weight: 3
-  showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true 
+  name: Experience   # Title of section (default: "")
+  id: experiences    # url id/slug of section *Required*
+  enable: true       # Boolean to determine if this section is enabled (default: false)
+  weight: 2          # Order to display section in (default: alphabetical followed by weight)
+  showOnNavbar: true # Boolean to determine if a link should be shown for this section on the navbar
+  hideTitle: false   # Can optionally hide the title in sections (default: false)
 
-# Your experiences
 experiences:
-- company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
-    logo: /images/sections/experiences/company1.jpg
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company1.jpg
-    # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
-  positions:
-  - designation: Senior Software Engineer
-    start: Nov 2019
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
-    responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
-
-  - designation: Junior Software Engineer
-    start: Nov 2017
-    end: Oct 2019
-    responsibilities:
-    - Implement and test xyz feature for abc tool.
-    - Support client for abc tool.
-    - Learn k,d,w technology for xyz.
+### Experiences Template
+# - company: # Some information about your company. 
+#     name: Example Co.
+#     url: "https://www.example.com"
+#     location: State, United States
+#     logo: /images/sections/experiences/ExampleCompany.jpg
+#     # darkLogo: /images/sections/experiences/ExampleCompany-dark.jpg # Can optionally show a different logo for dark theme
+#     # Company overview using markdown syntax.
+#     overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+#   positions: # A list of positions you have held in the company. You can provide multiple positions if you have changed your position in the company.
+#   - designation: Senior Software Engineer # Represents your role at the position.
+#     start: Nov 2019 # don't provide end date if you are currently working there. It will be replaced by "Present"
+#     responsibilities: # A list of responsibilities you handled at this position. Uses markdown syntax.
+#     - Design and develop XYZ tool for ABC task
+#     - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
+#     - Lead of backend team.
+#   - designation: Junior Software Engineer # Represents your role at the position.
+#     start: Nov 2017
+#     end: Oct 2019
+#     responsibilities: # A list of responsibilities you handled at this position. Uses markdown syntax.
+#     - Implement and test xyz feature for abc tool.
+#     - Support client for abc tool.
+#     - Learn k,d,w technology for xyz.
+###
 
 - company:
-    name: PreExample Co.
-    url: "https://www.example.com"
-    location: Nowhere
-    logo: /images/sections/experiences/company2.jpg
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company2.jpg
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    name: Simpluris
+    url: "https://www.simpluris.com/our-approach/"
+    location: Remote
+    logo: /images/sections/experiences/Simpluris.png
+    overview: As a Cloud Systems Administrator at Simpluris, I manage and optimize a hybrid IT infrastructure with a primary focus on Microsoft Azure and Microsoft 365 to strengthen security, performance, and user experience. My role encompasses system integration, compliance, and advanced troubleshooting across both cloud and on-premises environments, with additional support for select AWS resources.
   positions:
-  - designation: Software Engineer
-    start: March 2016
-    end: May 2017
+  - designation: Cloud Systems Administrator
+    start: August 2023
     responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
-
+    - "Cloud & Systems Administration: Manage and optimize Azure resources, with additional support for AWS. Configure virtual machines, applications, and containers to ensure reliable performance and meet operational needs."
+    - "Microsoft 365 Management: Administer Microsoft 365 services such as Exchange Online, SharePoint, and Teams, enhancing collaboration and productivity while managing access controls and security settings."
+    - "Security & Compliance: Oversee endpoint, email, and firewall protections across Azure and Microsoft 365, implementing multi-layered security protocols to protect data. Ensure compliance with regulatory standards through policy development and auditing."
+    - "Automated Monitoring & Troubleshooting: Develop automated monitoring and reporting solutions to proactively detect potential issues, reducing downtime and improving response times. Troubleshoot connectivity challenges across physical and cloud-connected sites."
+    - "Backup & Redundancy Strategies: Design and enforce data backup, recovery, and redundancy strategies, supporting resilience and continuity across systems and ensuring minimal disruption in critical scenarios."
+    - "Vendor & Hardware Management: Evaluate hardware and software with vendors, aligning solutions with organizational needs and future growth objectives."
+    - "User Support & Documentation: Provide comprehensive technical support for end-users, including white-glove support for critical applications and services. Document troubleshooting processes and standardize configurations, improving operational efficiency and reducing resolution times."
 - company:
-    name: Intern Counting Company (ICC).
-    url: "https://www.example.com"
-    location: Intern Land
-    logo: /images/sections/experiences/company3.jpg
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company3.jpg
-    overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
+    name: Withum
+    url: "https://www.withum.com/service/technology-and-digital-transformation/"
+    location: Remote
+    logo: /images/sections/experiences/Withum.png
+    overview: As a Cloud Engineer at Withum, a recognized Microsoft Partner and Cloud Solution Provider (CSP), I consulted clients on Azure and Microsoft 365 solutions tailored to their diverse needs. I played a key role in designing cloud infrastructure, enhancing security, and improving operational performance to meet client goals.
   positions:
-  - designation: Intern
-    start: Jun 2015
-    end: Jan 2016
+  - designation: Cloud Engineer
+    start: October 2022
+    end: July 2023
     responsibilities:
-    - Count lost of interns.
-    - Count more interns.
-    - Count me as an intern.
+    - "Azure Infrastructure: Architected scalable Azure environments, including VMs, VNet configurations, storage, and VPNs, to optimize client performance and reliability."
+    - "Microsoft 365 Integration: Supported clients with Microsoft 365, configuring Exchange Online, SharePoint, and Teams for streamlined collaboration and data protection."
+    - "Security & Compliance: Enhanced security using Azure AD for identity management, data encryption, and custom policies. Configured network security groups and established compliance-aligned security protocols."
+    - "Client Collaboration: Conducted assessments and guided clients through Azure migrations, security updates, and cost-saving measures, ensuring alignment with business objectives."
+    - "Automation: Developed automation scripts with PowerShell and Azure Automation to streamline maintenance and reporting, reducing manual tasks and improving reliability."
+    - "Cloud Migrations: Led migration projects from legacy systems to Azure, creating migration plans and ensuring smooth transitions for improved scalability."
+    - "Training: Delivered training on Azure best practices, supporting knowledge growth for clients and team members."
+- company:
+    name: Aylo Health
+    url: "https://aylohealth.com/"
+    location: Metro Atlanta, Georgia
+    logo: /images/sections/experiences/AyloHealth.png
+    overview: As a Systems Administrator at Aylo Health (formerly Eagles Landing Health), I ensured secure, efficient IT operations essential to healthcare delivery. By managing HIPAA-compliant networks and systems, I maintained high availability for critical services while safeguarding patient data. I created workflows that streamlined processes for clinical and administrative teams, enhancing productivity and minimizing disruptions. My proactive maintenance approach reduced downtime, supporting seamless, continuous operations in a high-demand healthcare environment.
+  positions:
+  - designation: Systems Administrator
+    start: November 2021
+    end: October 2022
+    responsibilities:
+    - "Network & Systems Management: Maintained and optimized the network, workstations, and servers, ensuring they met HIPAA compliance requirements for data protection and accessibility."
+    - "User Support & Workflow Optimization: Developed user-friendly workflows and processes that improved productivity for both clinical and administrative teams. Delivered timely support to address IT issues, ensuring minimal disruption in a high-demand environment."
+    - "Proactive System Maintenance: Identified potential issues and proactively performed maintenance, supporting efficient, uninterrupted operation in critical healthcare workflows."
+- company:
+    name: Bridge Technology Operations
+    url: "https://btechsouth.com/"
+    location: Metro Atlanta, Georgia
+    logo: /images/sections/experiences/BridgeTech.png
+    overview: As an IT Support Specialist, I provided comprehensive support across various IT systems, working in a managed service provider (MSP) setting to address client needs at all organizational levels.
+  positions:
+  - designation: Systems Administrator
+    start: October 2020
+    end: November 2021
+    responsibilities:
+    - "Client-Focused IT Solutions: Delivered proactive and reactive support to clients, ranging from new system integrations to network upgrades. Maintained strong client relationships through effective communication and efficient problem-solving."
+    - "System Integration & Project Management: Led client projects, including system integrations and network refreshes, ensuring solutions aligned with client goals and were implemented with minimal disruption."
+    - "Documentation & Process Improvement: Streamlined support processes by documenting configurations, troubleshooting steps, and best practices, reducing resolution times and enhancing client satisfaction."

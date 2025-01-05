@@ -1,24 +1,14 @@
-# section information
 section:
-  name: Achievements
-  id: achievements
-  enable: true
-  weight: 10
-  showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
+  name: Achievements  # Title of section (default: "")
+  id: achievements    # url id/slug of section *Required*
+  enable: false       # Boolean to determine if this section is enabled (default: false)
+  weight: 10          # Order to display section in (default: alphabetical followed by weight)
+  showOnNavbar: false # Boolean to determine if a link should be shown for this section on the navbar
+  hideTitle: false    # Can optionally hide the title in sections (default: false)
 
-# Your achievements achievements
 achievements:
-- title: Best Presenter
-  image: /images/sections/achievements/presenter.jpg
-  summary: Best presenter in the 2020 XYZ conference.
-- title: Champion
-  image: /images/sections/achievements/sport.jpg
-  summary: Champion in cycling inter-city cycling championship 2020.
-- title: Graduation
-  image: /images/sections/achievements/graduation-cap.jpg
-  summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
-- title: Award Winner
-  image: /images/sections/achievements/woman-winner.jpg
-  summary: Wined best paper award at IEE Conference 2020.
+### Achievements Template
+# - title: The title of the achievement.
+#   image: /images/sections/achievements/Example.jpg # An image of the achievement.
+#   summary: A summary of the achievement.
+###
