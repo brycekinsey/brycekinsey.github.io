@@ -27,7 +27,7 @@ socialLinks: # You can use any of your social media links with font-awesome (fre
 
 resourceLinks: # You can put custom buttons to link your relevant resources. For example, you can link to files (like your resume) by placing them in the static/files directory.
 - title: "My Resume"
-  url: "files/LinkedInResume-BryceKinsey.pdf"
+  url: "files/bryce-kinsey-resume-public.pdf"
 
 badges: # You can show your verifiable certificates, or a circular bar indicating the level of expertise on a certain skill, as badges.
 - type: certification
